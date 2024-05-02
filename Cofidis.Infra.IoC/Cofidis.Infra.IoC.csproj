@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DependencyInjectionAPI.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cofidis.Application\Cofidis.Application.csproj" />
+    <ProjectReference Include="..\Cofidis.Domain\Cofidis.Domain.csproj" />
+    <ProjectReference Include="..\Cofidis.Infra.Data\Cofidis.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

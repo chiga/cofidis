@@ -1,0 +1,6 @@
+@Cofidis_HostAddress = http://localhost:5109
+
+GET {{Cofidis_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
